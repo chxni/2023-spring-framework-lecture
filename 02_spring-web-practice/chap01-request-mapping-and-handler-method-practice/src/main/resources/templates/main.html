@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+    <h1 th:text="|${nickname} 님의 주문 요청서|"></h1>
+    <form action="/orders" method="post">
+        상품선택 :
+        <select name="pName">
+            <option value="coffee">커피</option>
+            <option value="coke">콜라</option>
+        </select>
+        <input type="text" name="quantity" placeholder="수량">
+        <input type="text" name="name" placeholder="이름">
+        <input type="text" name="address" placeholder="주소">
+        <input type="text" name="phone" placeholder="전화번호">
+        <button type="submit">주문하기</button>
+    </form>
+</body>
+</html>
